@@ -13,7 +13,7 @@ function useThemeSwitcher() {
 		if (_mode) {
 			setMode(_mode);
 		} else {
-			setMode('light');
+			setMode('dark');
 		}
 	};
 	useEffect(() => {
