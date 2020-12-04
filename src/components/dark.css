@@ -1,0 +1,57 @@
+body.dark-mode {
+	background: black;
+	color: #fff;
+}
+body.dark-mode .nav-links li a {
+	color: black;
+}
+body.dark-mode .bg-light {
+	background-color: #12171e !important;
+}
+body.dark-mode .table {
+	color: #fff;
+}
+body.dark-mode #sidebar ul li a:hover {
+	background: #131820;
+	color: #ff9d9d;
+}
+
+body.dark-mode input {
+	background: #12171e;
+	color: #fff;
+	border: 1px solid #454444;
+}
+
+body.dark-mode .page-link {
+	background: transparent;
+	color: #fff;
+}
+
+body.dark-mode .page-item.disabled .page-link {
+	background: transparent;
+}
+body.dark-mode .list-group-item {
+	background: #12171e;
+	color: #fff;
+}
+body.dark-mode .list-group-item.active,
+body.dark-mode .list-group-item:hover {
+	background: #ababac;
+}
+body.dark-mode .card {
+	background: #12171e;
+}
+body.dark-mode .tools-icon {
+	color: white;
+}
+body.dark-mode .name-sid {
+	color: white;
+}
+@media (max-width: 768px) {
+	body.dark-mode .line {
+		width: 30px;
+		height: 3px;
+		background: black;
+		margin: 5px;
+	}
+}

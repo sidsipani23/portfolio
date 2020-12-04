@@ -1,0 +1,348 @@
+body {
+	background-color: #f4f4f4;
+}
+.btn {
+	margin: 0 5%;
+}
+.card {
+	margin-top: 5%;
+}
+.copyright {
+	display: inline-block;
+}
+.name-sid {
+	display: inline;
+	color: black;
+	cursor: pointer;
+}
+.footer {
+	padding: 3% 0;
+}
+.hello {
+	background: linear-gradient(
+		to right,
+		orange,
+		yellow,
+		green,
+		cyan,
+		blue,
+		violet
+	);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.first-half {
+	position: relative;
+	animation: first-half 2s forwards;
+}
+.second-half {
+	position: relative;
+	animation: second-half 2s forwards;
+}
+.nav-item:hover {
+	position: relative;
+	animation: push-down 1s forwards;
+}
+.nav-text {
+	display: none;
+}
+.centered {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.fa-github:hover {
+	color: white;
+}
+.fa-linkedin:hover {
+	color: rgb(40, 103, 178);
+}
+.fa-blog:hover {
+	color: orange;
+}
+.fa-facebook:hover {
+	color: rgb(66, 103, 178);
+}
+.fa-instagram:hover {
+	color: rgb(233, 89, 80);
+}
+.color-mode {
+	position: absolute;
+	left: 95%;
+	color: black;
+}
+.fa-sun:hover {
+	color: yellow;
+	cursor: pointer;
+}
+.fa-moon:hover {
+	color: white;
+	cursor: pointer;
+}
+.fa-html5:hover {
+	color: #e34c26;
+}
+
+.fa-css3-alt:hover {
+	color: #264de4;
+}
+.fa-js-square:hover {
+	color: #f0db4f;
+}
+.fa-react:hover {
+	color: #61dbfb;
+}
+.fa-node:hover {
+	color: #68a063;
+}
+.fa-npm:hover {
+	color: #cc3534;
+}
+nav {
+	height: 7vh;
+	background: rgb(151, 4, 4);
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+.nav-links li a {
+	color: white;
+}
+.text-for-nav {
+	display: none;
+}
+.profile_img {
+	width: 105%;
+	height: 100%;
+	border-radius: 20%;
+	padding: 3%;
+}
+.programmer_img {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-right: 5%;
+	width: 43.5%;
+	height: 43.5%;
+	position: relative;
+	top: 3%;
+	bottom: 10%;
+	left: -19%;
+}
+.heading {
+	font-family: 'Sacramento', cursive;
+	font-size: 3.5rem;
+	padding-top: 5%;
+}
+.sub-heading {
+	font-family: 'Sacramento', cursive;
+	font-size: 3rem;
+}
+.sub-heading-2 {
+	font-family: 'Sacramento', cursive;
+	font-size: 2.5rem;
+}
+.sub-heading-3 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 2rem;
+}
+.icon {
+	position: relative;
+	left: 0;
+	bottom: 19%;
+	padding: 0 7%;
+	color: rgb(151, 4, 4);
+}
+.prog {
+	color: #db6400;
+	left: 28%;
+}
+.writ {
+	color: #0e49b5;
+	left: 30%;
+}
+.name {
+	color: #ec0101;
+}
+.arrow-down {
+	position: relative;
+	left: 50%;
+}
+.tools-div {
+	padding-bottom: 10%;
+}
+.div-main-tools {
+	animation: tools-div 2s forwards;
+}
+.tools-and-tech-heading {
+	padding-top: 5%;
+}
+.tools-and-tech {
+	padding-top: 4%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3rem;
+	grid-auto-rows: auto;
+	justify-items: center;
+}
+.tools-icon {
+	align-self: center;
+	color: black;
+}
+.tools-icon:hover {
+	animation: push-down 1s forwards;
+}
+.tools-icon:visited {
+	color: black;
+}
+.project-cards {
+	padding: 5% 0;
+}
+.project-div {
+	animation: projects-div 2s forwards;
+}
+.card:hover {
+	animation: card-hover 1s forwards;
+}
+@media (max-width: 768px) {
+	nav {
+		position: relative;
+		height: 8vh;
+	}
+	.nav-links {
+		flex-direction: column;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 40%;
+	}
+	.open {
+		position: relative;
+		animation: open-nav 1s forwards;
+		height: 40%;
+	}
+	.ham-closed {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 20%;
+	}
+	.closed-nav-links {
+		display: none;
+	}
+	.text-for-nav {
+		display: inline;
+		font-family: 'Pacifico', cursive;
+		font-size: 2rem;
+		position: absolute;
+		right: 22%;
+		color: white;
+	}
+	.hide-text {
+		display: none;
+	}
+	.color-mode {
+		position: absolute;
+		left: 5%;
+		bottom: 47%;
+		color: black;
+	}
+	.profile_img {
+		display: none;
+	}
+	.tools-and-tech-heading {
+		padding-top: 25%;
+	}
+	.tools-icon:visited {
+		color: black;
+	}
+	.tools-icon {
+		color: black;
+	}
+	.project-cards {
+		margin: auto;
+	}
+}
+.contact-keeper {
+	padding-bottom: 5%;
+}
+.weather {
+	padding-bottom: 10%;
+}
+@media (max-width: 993px) and (min-width: 769px) {
+	.second-half {
+		display: none;
+	}
+}
+@keyframes first-half {
+	0% {
+		left: -50%;
+	}
+	100% {
+		left: 0;
+	}
+}
+@keyframes second-half {
+	0% {
+		right: -50%;
+	}
+	100% {
+		right: 0;
+	}
+}
+@keyframes push-down {
+	0% {
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+@keyframes tools-div {
+	0% {
+		transform: translateX(50%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes projects-div {
+	0% {
+		transform: translateX(-50%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes open-nav {
+	0% {
+		transform: translateY(-40%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+@keyframes card-hover {
+	0% {
+	}
+
+	100% {
+		transform: translateY(7px);
+	}
+}
