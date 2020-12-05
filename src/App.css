@@ -149,7 +149,7 @@ nav {
 	font-size: 2rem;
 }
 .icon {
-	padding: 0 8% 0 12%;
+	padding: 0 8% 0 10%;
 	color: rgb(151, 4, 4);
 }
 .div-icons {
@@ -208,7 +208,7 @@ nav {
 @media (max-width: 768px) {
 	nav {
 		position: relative;
-		height: 8vh;
+		height: 6vh;
 	}
 	.nav-links {
 		flex-direction: column;
@@ -219,11 +219,20 @@ nav {
 		background: white;
 		margin: 5px;
 	}
+	.line-1-open {
+		transform-origin: center;
+		transform: rotate(45deg) translateY(5px);
+	}
+	.line-3-open {
+		transform-origin: center;
+		transform: rotate(-45deg) translateY(-5px);
+	}
+	.line-2-open {
+		display: none;
+	}
 	.hamburger {
-		position: absolute;
-		cursor: pointer;
-		right: 5%;
-		top: 40%;
+		float: right;
+		padding-top: 25%;
 	}
 	.open {
 		position: relative;
@@ -231,10 +240,7 @@ nav {
 		height: 40%;
 	}
 	.ham-closed {
-		position: absolute;
-		cursor: pointer;
-		right: 5%;
-		top: 20%;
+		padding-top: 2.5%;
 	}
 	.closed-nav-links {
 		display: none;
@@ -274,6 +280,9 @@ nav {
 @media (max-width: 993px) and (min-width: 769px) {
 	.second-half {
 		display: none;
+	}
+	nav {
+		height: 13vh;
 	}
 }
 @keyframes first-half {

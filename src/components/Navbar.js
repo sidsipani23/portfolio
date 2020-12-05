@@ -17,9 +17,9 @@ function Navbar() {
 				<div
 					className={closed ? 'hamburger ham-closed' : 'hamburger'}
 					onClick={openHam}>
-					<div className='line'></div>
-					<div className='line'></div>
-					<div className='line'></div>
+					<div className={closed ? 'line' : 'line line-1-open'}></div>
+					<div className={closed ? 'line' : 'line line-2-open'}></div>
+					<div className={closed ? 'line' : 'line line-3-open'}></div>
 				</div>
 				<ul className={closed ? 'nav-links closed-nav-links' : 'nav-links '}>
 					<li className='nav-item centered '>
