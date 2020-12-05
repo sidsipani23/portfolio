@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useThemeSwitcher from '../context/useThemeSwitcher';
 function Navbar() {
 	const [closed, setClosed] = useState(true);
+
 	const ThemeSwitcher = useThemeSwitcher();
 	const openHam = () => {
 		if (closed) {
@@ -11,6 +12,7 @@ function Navbar() {
 			setClosed(true);
 		}
 	};
+
 	return (
 		<div>
 			<nav className={closed ? '' : 'open'}>
