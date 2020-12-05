@@ -14,7 +14,7 @@ const Home = () => {
 						<span class='name'>Siddhartha Sipani.</span>
 					</p>
 					<p className='sub-heading-2 text-center'>
-						<span className='prog'>Progammer </span>
+						<span className='prog'>Developer </span>
 						<span>| </span>
 						<span className='writ'>Writer</span>
 					</p>
