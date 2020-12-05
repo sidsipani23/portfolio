@@ -121,16 +121,15 @@ nav {
 	border-radius: 20%;
 	padding: 3%;
 }
+.div-prog {
+	display: flex;
+	justify-content: center;
+}
 .programmer_img {
-	padding-top: 10%;
-	padding-bottom: 10%;
-	padding-right: 5%;
+	padding-top: 5%;
+	padding-bottom: 0%;
 	width: 43.5%;
 	height: 43.5%;
-	position: relative;
-	top: 3%;
-	bottom: 10%;
-	left: -19%;
 }
 .heading {
 	font-family: 'Sacramento', cursive;
@@ -150,26 +149,25 @@ nav {
 	font-size: 2rem;
 }
 .icon {
-	position: relative;
-	left: 0;
-	bottom: 19%;
-	padding: 0 7%;
+	padding: 0 8%;
 	color: rgb(151, 4, 4);
+}
+.div-icons {
+	display: flex;
+	justify-content: center;
 }
 .prog {
 	color: #db6400;
-	left: 28%;
 }
 .writ {
 	color: #0e49b5;
-	left: 30%;
 }
 .name {
 	color: #ec0101;
 }
-.arrow-down {
-	position: relative;
-	left: 50%;
+.div-know-more {
+	display: flex;
+	justify-content: center;
 }
 .tools-div {
 	padding-bottom: 10%;
@@ -241,14 +239,7 @@ nav {
 	.closed-nav-links {
 		display: none;
 	}
-	.text-for-nav {
-		display: inline;
-		font-family: 'Pacifico', cursive;
-		font-size: 2rem;
-		position: absolute;
-		right: 22%;
-		color: white;
-	}
+
 	.hide-text {
 		display: none;
 	}

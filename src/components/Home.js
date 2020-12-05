@@ -18,16 +18,22 @@ const Home = () => {
 						<span>| </span>
 						<span className='writ'>Writer</span>
 					</p>
-					<i className='fas fa-code fa-3x icon prog'></i>
-					<i class='fas fa-pen-nib fa-3x icon writ'></i>
-					<img
-						src={programmer}
-						className='programmer_img '
-						alt='programmer_img'
-					/>
-					<p className='sub-heading-3 text-center'>Scroll down to know more </p>
+					<div className='div-icons'>
+						<i className='fas fa-code fa-3x icon prog'></i>
+						<i class='fas fa-pen-nib fa-3x icon writ'></i>
+					</div>
+					<div className='div-prog'>
+						<img
+							src={programmer}
+							className='programmer_img '
+							alt='programmer_img'
+						/>
+					</div>
 
-					<i class='far fa-arrow-alt-circle-down fa-2x arrow-down'></i>
+					<p className='sub-heading-3 text-center'>Scroll down to know more </p>
+					<div className='div-know-more'>
+						<i class='far fa-arrow-alt-circle-down fa-2x'></i>
+					</div>
 				</div>
 				<div className='col-md second-half'>
 					<img src={myImg} className='profile_img' alt='profile_img' />
