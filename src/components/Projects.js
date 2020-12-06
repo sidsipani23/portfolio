@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Projects = () => {
-	const [scroll, setScroll] = useState(0);
+	const [, setScroll] = useState(0);
 	const scrollDownToProjects = () => {
 		setScroll(window.scrollTo(0, 1200));
 	};

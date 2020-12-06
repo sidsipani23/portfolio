@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import myImg from '../Images/IMG_9231.JPG';
 import programmer from '../Images/programmer.png';
 const Home = () => {
-	const [scroll, setScroll] = useState(0);
+	const [, setScroll] = useState(0);
 	const scrollDownToTools = () => {
 		setScroll(window.scrollTo(0, 750));
 	};
