@@ -47,6 +47,12 @@ body.dark-mode .tools-icon {
 body.dark-mode .name-sid {
 	color: white;
 }
+body.dark-mode .programmer_img {
+	filter: drop-shadow(0 0 0 #585858);
+}
+body.dark-mode .profile_img {
+	filter: drop-shadow(0 0 0 #585858);
+}
 @media (max-width: 768px) {
 	body.dark-mode .line {
 		width: 30px;

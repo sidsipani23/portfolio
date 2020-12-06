@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #f4f4f4;
 }
@@ -13,7 +16,6 @@ body {
 .name-sid {
 	display: inline;
 	color: black;
-	cursor: pointer;
 }
 .footer {
 	padding: 3% 0;
@@ -42,7 +44,7 @@ body {
 }
 .nav-item:hover {
 	position: relative;
-	animation: push-down 1s forwards;
+	animation: push-up 1s forwards;
 }
 .nav-text {
 	display: none;
@@ -66,6 +68,9 @@ body {
 }
 .fa-instagram:hover {
 	color: rgb(233, 89, 80);
+}
+.fa-download:hover {
+	color: rgb(5, 131, 5);
 }
 .color-mode {
 	position: absolute;
@@ -120,6 +125,7 @@ nav {
 	height: 100%;
 	border-radius: 20%;
 	padding: 3%;
+	filter: drop-shadow(2px 4px 8px #585858);
 }
 .div-prog {
 	display: flex;
@@ -130,6 +136,7 @@ nav {
 	padding-bottom: 0%;
 	width: 43.5%;
 	height: 43.5%;
+	filter: drop-shadow(2px 4px 8px #585858);
 }
 .heading {
 	font-family: 'Quicksand', sans-serif;
@@ -191,7 +198,7 @@ nav {
 	color: black;
 }
 .tools-icon:hover {
-	animation: push-down 1s forwards;
+	animation: push-up 1s forwards;
 }
 .tools-icon:visited {
 	color: black;
@@ -204,6 +211,11 @@ nav {
 }
 .card:hover {
 	animation: card-hover 1s forwards;
+}
+
+.fa-arrow-alt-circle-down:hover {
+	cursor: pointer;
+	color: red;
 }
 @media (max-width: 768px) {
 	nav {
@@ -301,14 +313,14 @@ nav {
 		right: 0;
 	}
 }
-@keyframes push-down {
+@keyframes push-up {
 	0% {
 	}
 	50% {
-		transform: translateY(5px);
+		transform: translateY(-5px);
 	}
 	100% {
-		transform: translateY(5px);
+		transform: translateY(-5px);
 	}
 }
 @keyframes tools-div {
@@ -343,6 +355,6 @@ nav {
 	}
 
 	100% {
-		transform: translateY(7px);
+		transform: translateY(-7px);
 	}
 }

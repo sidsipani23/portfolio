@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import myImg from '../Images/IMG_9231.JPG';
 import programmer from '../Images/programmer.png';
 const Home = () => {
+	const [scroll, setScroll] = useState(0);
+	const scrollDownToTools = () => {
+		setScroll(window.scrollTo(0, 750));
+	};
 	return (
 		<div className={'container'}>
 			<div className='row'>
@@ -32,7 +36,9 @@ const Home = () => {
 
 					<p className='sub-heading-3 text-center'>Scroll down to know more </p>
 					<div className='div-know-more'>
-						<i class='far fa-arrow-alt-circle-down fa-2x'></i>
+						<i
+							class='far fa-arrow-alt-circle-down fa-2x'
+							onClick={scrollDownToTools}></i>
 					</div>
 				</div>
 				<div className='col-md second-half'>

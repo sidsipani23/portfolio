@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import useThemeSwitcher from '../context/useThemeSwitcher';
+import Resume from '../Resume_Siddhartha.pdf';
 function Navbar() {
 	const [closed, setClosed] = useState(true);
 
@@ -72,6 +73,16 @@ function Navbar() {
 							data-placement='bottom'
 							href='https://www.instagram.com/sid_sipani/?hl=en'>
 							<i className='fab fa-instagram fa-2x'></i>
+						</a>
+					</li>
+					<li className='nav-item centered'>
+						<a
+							className='nav-link'
+							data-toggle='tooltip'
+							title='Resume'
+							data-placement='bottom'
+							href={Resume}>
+							<i class='fas fa-download fa-2x'></i>
 						</a>
 					</li>
 					{ThemeSwitcher}

@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Projects = () => {
+	const [scroll, setScroll] = useState(0);
+	const scrollDownToProjects = () => {
+		setScroll(window.scrollTo(0, 1200));
+	};
 	return (
 		<div className='container text-center project-div'>
 			<span className='sub-heading-3'>
-				Projects completed <i class='fas fa-arrow-alt-circle-down fa-md'></i>
+				Projects completed{' '}
+				<i
+					class='fas fa-arrow-alt-circle-down fa-md'
+					onClick={scrollDownToProjects}></i>
 			</span>{' '}
 			<div class='row container project-cards'>
 				<div class='col-sm-6'>
